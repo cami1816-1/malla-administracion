@@ -1,1 +1,44 @@
+body {
+  font-family: sans-serif;
+  background-color: #f0f8ff;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #007acc;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(180px, 1fr));
+  gap: 12px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.course {
+  border: 2px solid #007acc;
+  background-color: #e0f7ff;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.course.locked {
+  background-color: #cce5f3;
+  border-color: #99cce0;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.course.completed {
+  background-color: #b3e5fc;
+  border-color: #0288d1;
+  color: white;
+}
 
